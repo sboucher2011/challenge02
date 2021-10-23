@@ -48,9 +48,9 @@ header nav ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
     list-style: none;
-  }
+}
   
 
   
@@ -84,24 +84,30 @@ h3 {
 
 p {
     color: var(--secondary-color);
-    font-size: 15px;
+    font-size: 20px;
 }
 
 .section-title {
     padding: 40px;
-    background-color: rebeccapurple;
-    width: 30%;
+    margin: 0;
     border-right: 4px solid var(--secondary-color);
     position:  relative;
-    
-}
-
-.content-section {
-    float: right;
+    flex-basis: 27%;
 }
 
 .about-me, .my-work, .contact-me{
     padding-top: 30px;
+    display: flex;
+}
+
+.section-content p {
+    padding-left: 25px;
 }
 
 /* Contact Me */
+.contact-info {
+    padding-left: 25px;
+    display: flex;
+    justify-content: space-around;
+    background-color: rebeccapurple;
+}
