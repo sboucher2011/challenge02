@@ -1,0 +1,107 @@
+/* setup colors */
+:root {
+    --primary-color: #16bcc4;
+    --secondary-color: #323742;
+}
+
+/* Overall Style */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* Header / Nav Bar */
+header {
+    background-color: var(--secondary-color);
+    display: flex;
+    height: 85px;
+}
+
+header h1 {
+    font-size: 40px;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    margin: 8px 0px 15px 0px;
+    padding: 10px 20px 15px 80px;
+}
+
+header a {
+    text-decoration: none;
+    font-size: 22px;
+    color: var(--primary-color);
+    padding: 0 10px 4px 10px;
+    margin: 0 0 0 0;
+    border-bottom: 3.5px solid var(--primary-color)
+}
+
+header nav li {
+    padding: 26px 10px 0 0px;
+}
+
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+  }
+  
+
+  
+
+
+    
+/* Hero */
+.hero {
+    background-image: url('../images/hero.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: right;
+    flex-wrap: wrap;
+    height: 200px;
+}
+
+.hero h2 {
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    padding: 8px 8px 8px 8px;
+    margin: 130px 60px 0 0;
+}
+
+/* Content */
+h3 {
+    color: var(--secondary-color);
+    font-size: 50px;
+    position: absolute;
+    top: 0;
+}
+
+p {
+    color: var(--secondary-color);
+    font-size: 15px;
+}
+
+.section-title {
+    padding: 40px;
+    background-color: rebeccapurple;
+    width: 30%;
+    border-right: 4px solid var(--secondary-color);
+    position:  relative;
+    
+}
+
+.content-section {
+    float: right;
+}
+
+.about-me, .my-work, .contact-me{
+    padding-top: 30px;
+}
+
+/* Contact Me */
