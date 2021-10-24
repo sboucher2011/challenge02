@@ -19,6 +19,7 @@ body {
 header {
     background-color: var(--secondary-color);
     display: flex;
+    justify-content: space-between;
     height: 85px;
 }
 
@@ -29,6 +30,7 @@ header h1 {
     margin: 8px 0px 15px 0px;
     padding: 10px 20px 15px 80px;
 }
+
 
 header a {
     text-decoration: none;
@@ -47,9 +49,8 @@ header nav li {
 header nav ul {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-end;
     list-style: none;
+    padding-right: 60px;
 }
   
 
