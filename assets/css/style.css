@@ -69,28 +69,39 @@ header nav ul {
 }
 
 /* Content */
+
+.main {
+    padding-right: 20px;
+    padding-left: 20px;
+    height: 100%;
+    width: 100%;
+}
+
 .about-me-content img {
     height: 300px;
-    padding-bottom: 15px;
-    padding-top: 15px;
-    padding-left: 25px;
-    border-radius: 50px;
+    margin-bottom: 15px;
+    border-radius: 25px;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
 }
 
 p {
     padding-bottom: 15px;
     padding-left: 25px;
     font-size: 18px;
+    margin-right: 50px;
 }
 
 .about-me-container {
     display: flex;
     padding-top: 25px;
-    padding-right: 60px;
 }
 
 .about-me-title {
-    padding-left: 100px;
+    padding-left: 17px;
     border-right: 4px solid var(--secondary-color);
     padding-right: 15px;
 }
@@ -102,121 +113,228 @@ h3 {
 }
 
 .my-work-container {
-    background-color: green;
     margin-top: 25px;
     display: flex;
 }
 
 .my-work-title {
-    background-color: yellow;
-    padding-left: 100px;
     border-right: 4px solid var(--secondary-color);
-    padding-right: 22px;
+    padding: 20px;
 }
-
 
 .container {
     display: flex;
     flex-wrap: wrap;
+    padding-left: 18px;
 }
 
 .box-item {
-    width: 200px;
-    margin: 10px;
+    width: 723px;
+    margin-left: 10px;
+    margin-top: 10px;
     border: 3px solid var(--primary-color);
     background-color: lightblue;
     background: rgba(255, 0, 255, 0.5);
+    justify-content: space-evenly;
+}
+
+.big-box {
+    min-height: 500px;
+    width: 1456px;
+    background: url('../images/run-buddy.jpg');
+    box-shadow: inset 0 0 0 1000px rgba(50, 55, 66, 0.5);
+    border: 3px solid var(--primary-color);
+    background-color: lightblue;
+    margin-left: 27px;
 }
 
 .box-1 {
-    min-height: 100px;
+    min-height: 250px;
     background: url('../images/run-buddy.jpg');
-    width: 100%;
-    height: 100%;
     box-shadow: inset 0 0 0 1000px rgba(50, 55, 66, 0.5);
 }
 
 .box-2 {
-    min-height: 200px;
+    min-height: 250px;
+    background: url('../images/run-buddy.jpg');
+    box-shadow: inset 0 0 0 1000px rgba(50, 55, 66, 0.5);
 }
 
 .box-3 {
-    min-height: 300px;
+    min-height: 250px;
+    background: url('../images/run-buddy.jpg');
+    box-shadow: inset 0 0 0 1000px rgba(50, 55, 66, 0.5);
 }
 
 .box-4 {
-    min-height: 300px;
+    min-height: 250px;
+    background: url('../images/run-buddy.jpg');
+    box-shadow: inset 0 0 0 1000px rgba(50, 55, 66, 0.5);
 }
 
 .big-container {
-    background-color: green;
     margin-right: 60px;
 }
 
-.outside {
-    min-height: 100px;
+.title-block-big-box {
+    background-color: var(--primary-color);
+    position: absolute;
+    margin-right: 50px;
+    margin-top: 410px;
+    padding-right: 10px;
+}
+
+.title-block-big-box h4 {
+    font-size: 25px;
+    margin-left: 10px;
+}
+
+.title-block-big-box p {
+    font-size: 15px;
+    margin-left: 10px;
+    padding-left: 0px;
+    margin-top: 10px;
 }
 
 .title-block {
-    background-color: coral;
+    background-color: var(--primary-color);
+    position: absolute;
+    margin-right: 50px;
+    margin-top: 150px;
+    padding-right: 10px;
+}
+
+.title-block h4 {
+    font-size: 25px;
+    margin-left: 10px;
+}
+
+.title-block p {
+    font-size: 15px;
+    margin-left: 10px;
+    padding-left: 0px;
+    margin-top: 10px;
 }
 
 .box-item:hover {
-    width: 100%;
-    height: 100%;
-    margin: 10px;
     border: 3px solid var(--primary-color);
     box-shadow: inset 0 0 0 1000px rgba(50, 55, 66, 0);
 }
 
-/*
-.container img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
+.big-box:hover {
+    border: 3px solid var(--primary-color);
+    box-shadow: inset 0 0 0 1000px rgba(50, 55, 66, 0);
 }
-*/
-/* Contact Me */
 
-.contact-me {
+/* Contact Me */
+.contact-me-container {
     padding-top: 25px;
+    padding-left: 0px;
+    margin-left: 0px;
+
 }
+
 .contact-info {
-    padding-left: 25px;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     list-style: none;
     flex-wrap: wrap;
 }
 
 .contact-info li {
-    padding-right: 40px;
-    padding-top: 100px;
+    height: 120px;
+    align-items: center;
+    display: flex;
 }
 
 .contact-info a {
     text-decoration: none;
     font-size: 22px;
     color: var(--secondary-color);
-    padding: 0 10px 4px 10px;
-    margin: 0 0 0 0;
     border-bottom: 3.5px solid var(--secondary-color);
 }
 
-.section-title {
-    padding: 37px;
+.contact-me-title {
+    padding-right: 20px;
     margin: 0;
     border-right: 4px solid var(--secondary-color);
     position:  absolute;
-    flex: 40%;
 }
 
-/*
-h3 {
-    color: var(--secondary-color);
-    font-size: 50px;
-    position: absolute;
-    top: 0;
-    text-align: right;
+.contact-me-title h3 {
+    font-size: 42px;
 }
-*/
+
+.contact-info a.disabled {
+    pointer-events: none;
+    cursor: default;
+}
+
+/*Footer*/
+.footer {
+    margin-top: 30px;
+    height: 50px;
+}
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+    .big-box {
+        width: 723px;
+    }
+
+    .contact-info {
+        margin-left: 150px;
+    }
+}
+  
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+    header h1 {
+        font-size: 30px;
+    }
+
+    .big-box {
+        width: 500px;
+    }
+
+    .contact-info {
+        margin-left: 180px;
+    }
+
+    .box-item {
+        width: 500px;
+    }
+}
+  
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+
+    header h1 {
+        font-size: 20px;
+        color: var(--secondary-color);
+        background-color: var(--primary-color);
+        margin: 8px 0px 15px 0px;
+        padding: 10px 10px 10px 10px;
+    }
+    
+    header a {
+        text-decoration: none;
+        font-size: 22px;
+        color: var(--primary-color);
+        padding: 0 10px 4px 10px;
+        margin: 0 0 0 0;
+        border-bottom: 3.5px solid var(--primary-color)
+    }
+
+    .big-box {
+        width: 330px;
+    }
+
+    .contact-info {
+        margin-left: 180px;
+    }
+
+    .box-item {
+        width: 330px;
+    }
+}
